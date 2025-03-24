@@ -1,5 +1,9 @@
 # Agenda de contatos
 
+## Estrutura do projeto
+
+## Requisitos
+
 |       Status       | Requisito                                                                                                                                                                               |
 | :----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | :heavy_check_mark: | RF01: O sistema deve permitir o cadastro de clientes com os seguintes dados: Nome, CPF, Data de Nascimento e Endereço;                                                                  |
@@ -14,13 +18,21 @@
 
 |       Status       | Regra de negocio                                                                            |
 | :----------------: | ------------------------------------------------------------------------------------------- |
-| :heavy_minus_sign: | RN01: Os campos Nome e CPF são obrigatórios no cadastro do cliente;                         |
-| :heavy_minus_sign: | RN02: Os campos Tipo do Contato e Valor do Contato são obrigatórios no cadastro do contato; |
-| :heavy_minus_sign: | RN03: O CPF informado deve ser único no sistema;                                            |
-| :heavy_minus_sign: | RN04: O Nome do cliente não pode estar vazio;                                               |
-| :heavy_minus_sign: | RN05: A Data de Nascimento deve ser válida;                                                 |
-| :heavy_minus_sign: | RN06: Um cliente pode ter mais de um contato cadastrado;                                    |
-| :heavy_minus_sign: | RN07: Ao excluir um cliente, todos os seus contatos devem ser removidos do sistema;         |
+| :heavy_check_mark: | RN01: Os campos Nome e CPF são obrigatórios no cadastro do cliente;                         |
+| :heavy_check_mark: | RN02: Os campos Tipo do Contato e Valor do Contato são obrigatórios no cadastro do contato; |
+| :heavy_check_mark: | RN03: O CPF informado deve ser único no sistema;                                            |
+| :heavy_check_mark: | RN04: O Nome do cliente não pode estar vazio;                                               |
+| :heavy_check_mark: | RN05: A Data de Nascimento deve ser válida;                                                 |
+| :heavy_check_mark: | RN06: Um cliente pode ter mais de um contato cadastrado;                                    |
+| :heavy_check_mark: | RN07: Ao excluir um cliente, todos os seus contatos devem ser removidos do sistema;         |
 | :heavy_minus_sign: | RN08: O sistema deve validar os dados informados antes de permitir o cadastro ou edição.    |
 
 ![alt text](image.png)
+
+## Dependências
+
+## Configurações
+
+## Instruções de uso
+
+## Script SQL para preparação do ambiente de testes
