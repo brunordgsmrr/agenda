@@ -16,7 +16,7 @@ public class ClienteService {
 	@Autowired
 	ClienteRepository clienteRepository;
 
-	public ClienteDTO cadastrar(ClienteDTO clienteDTO) {
+	public String cadastrar(ClienteDTO clienteDTO) {
 		
 		Cliente cliente = new Cliente();
 		LocalDate hoje = LocalDate.now();
@@ -29,14 +29,19 @@ public class ClienteService {
 		if ( clienteDTO.getDataNascimento().getYear() > ano) {
 			return null;
 		}		
+		
+		if (clienteDTO.getCpf().length() != 11) {
+			return null;
+		}
 
 		cliente.setNome(clienteDTO.getNome());
 		cliente.setCpf(clienteDTO.getCpf());
 		cliente.setDataNascimento(clienteDTO.getDataNascimento());
 		cliente.setEndereco(clienteDTO.getEndereco());		
 		
-		try {			
-			return new ClienteDTO(clienteRepository.save(cliente));
+		try {
+			clienteRepository.save(cliente);
+			return "Cliente cadastrado com sucesso!";
 		} catch (IllegalArgumentException e) {
 			return null;
 		}
@@ -55,7 +60,11 @@ public class ClienteService {
 		
 		if ( clienteDTO.getDataNascimento().getYear() > ano) {
 			return null;
-		}	
+		}		
+		
+		if (clienteDTO.getCpf().length() != 11) {
+			return null;
+		}
 
 		cliente.setId(id);
 		cliente.setNome(clienteDTO.getNome());
@@ -67,7 +76,7 @@ public class ClienteService {
 			clienteRepository.save(cliente);
 			return ("Alterado com sucesso");
 		} catch (IllegalArgumentException e) {
-			return ("Falha ao editar");
+			return null;
 		}
 	}
 
@@ -81,7 +90,7 @@ public class ClienteService {
 			clienteRepository.deleteById(id);
 			return "Excluido com sucesso!";
 		} catch (IllegalArgumentException e) {
-			return "Não foi possível excluir";
+			return null;
 		}
 	}
 

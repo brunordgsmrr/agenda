@@ -3,6 +3,7 @@ package com.muralis.agenda.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.muralis.agenda.dtos.ClienteDTO;
 import com.muralis.agenda.services.ClienteService;
@@ -29,18 +31,27 @@ public class ClienteController {
 	}
 
 	@PostMapping(value = "/cadastrar")
-	public ClienteDTO cadastrar(@RequestBody ClienteDTO body) {
-		return clienteService.cadastrar(body);
+	public String cadastrar(@RequestBody ClienteDTO body) {
+		if (clienteService.cadastrar(body) == null) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Parâmetro inválido!"); 
+		}
+		return "OK";
 	}
 
 	@PutMapping(value = "/editar")
-	public String editar(@RequestParam int id, @RequestBody ClienteDTO body) {
-		return (clienteService.editar(id, body));
+	public String editar(@RequestParam int id, @RequestBody ClienteDTO body) {		
+		if (clienteService.editar(id, body) == null) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Parâmetro inválido!"); 
+		}
+		return "OK";
 	}
 
 	@DeleteMapping(path = "/excluir")
-	public String excluir(@RequestParam int id) {		
-		return (clienteService.excluir(id));
+	public String excluir(@RequestParam int id) {
+		if (clienteService.excluir(id) == null) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Parâmetro inválido!"); 
+		}
+		return "OK";
 	}
 
 	@GetMapping(value = "/consultar")

@@ -21,11 +21,11 @@ public class ContatoService {
 	ContatoRepository contatoRepository;	
 	
 
-	public ContatoDTO cadastrar(int id, ContatoDTO contatoDTO) {
+	public String cadastrar(int id, ContatoDTO contatoDTO) {
 		Cliente cliente = clienteRepository.findById(id).orElseThrow();		
 
 		if (contatoDTO.getTipo().isEmpty() || contatoDTO.getValor().isEmpty()) {
-			return null;
+			return "Tipo e valor devem ser preenchidos!";
 		}
 		
 		
@@ -37,9 +37,10 @@ public class ContatoService {
 		contato.setObservacao(contatoDTO.getObservacao());
 		
 		try {			
-			return new ContatoDTO(contatoRepository.save(contato));
+			contatoRepository.save(contato);
+			return "Contato cadastrado com sucesso!";
 		} catch (IllegalArgumentException e) {
-			return null;
+			return "Erro ao cadastrar contato!";
 		}
 		
 	}
