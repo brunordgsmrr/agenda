@@ -26,7 +26,7 @@ public class ClienteService {
 			return null;
 		}
 		
-		if ( clienteDTO.getDataNascimento().getYear() < ano) {
+		if ( clienteDTO.getDataNascimento().getYear() > ano) {
 			return null;
 		}		
 
@@ -53,7 +53,7 @@ public class ClienteService {
 			return null;
 		}
 		
-		if ( clienteDTO.getDataNascimento().getYear() < ano) {
+		if ( clienteDTO.getDataNascimento().getYear() > ano) {
 			return null;
 		}	
 
