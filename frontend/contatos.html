@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contatos do cliente</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Contatos</h1>
+    </header>
+    <main>
+        <div class="headers-function">
+            <button id="btn-adicionar">Adicionar novo contato</button>
+        </div>
+        <table>
+            <thead>
+                <th></th>
+                <th class="show412">ID</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+                <th class="show412">Observação</th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Estrutura do Modal -->
+        <div id="contato-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adicionar contato</h2>
+                <div class="input-box">
+                    <label for="tipo">Tipo:</label>
+                    <input type="checkbox" name="" id="">
+                    <input id="tipo" type="text" placeholder="Digite o nome">
+                </div>
+                <div class="input-box">
+                    <label for="cpf">CPF:</label>
+                    <input id="cpf" type="text" placeholder="Digite o nome">
+                </div>
+                <div class="input-box">
+                    <label for="dt-nasc">Data de nascimento:</label>
+                    <input id="dt-nasc" type="date" placeholder="Digite o nome">
+                </div>
+                <div class="input-box">
+                    <label for="endereco">Endereço:</label>
+                    <input id="endereco" type="text" placeholder="Digite o nome">
+                </div>
+                <br>
+                <button id="salvar">Salvar</button>
+            </div>
+        </div>
+    </main>
+    <footer>Developed by <a href="">@brunordgsmrr</a> - 2025</footer>
+
+    <script src="js/contatos.js"></script>
+</body>
+
+</html>
