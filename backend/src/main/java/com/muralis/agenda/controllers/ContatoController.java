@@ -39,8 +39,8 @@ public class ContatoController {
 		return res;
 	}
 	
-	@GetMapping(value = "/listar/{clienteId}")
-	public List<ContatoDTO> listar (@PathVariable int clienteId) {
+	@GetMapping(value = "/listar")
+	public List<ContatoDTO> listar (@RequestParam int clienteId) {
 		List<ContatoDTO> contatoDTO = contatoService.listar(clienteId);
 		return contatoDTO;
 	}
