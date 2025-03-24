@@ -1,6 +1,6 @@
-window.document.addEventListener('onload', loadData())
+//window.document.addEventListener('onload', loadData())
 
-async function getData() {
+async function getDataContacts() {
     const params = new URLSearchParams(window.location.search)
     const clienteId = parseInt(params.get("clienteId"));
 
@@ -9,12 +9,13 @@ async function getData() {
     return data;
 }
 
-function createTableView(contatos) {
+function createTableViewContatos(contatos) {
     const tbody = document.querySelector('tbody');
+    tbody.textContent = "";
     contatos.forEach((contato) => {
         let tableRow = document.createElement('tr')
         tableRow.innerHTML = `
-            <td><button id="btn-editar"><img src="img/editar.png" alt="" class="icon"></button></td>
+            <td><button id="btn-editar-contato" contatoId="${contato.id}"><img src="img/editar.png" alt="" class="icon"></button></td>
             <td class="show412">${contato.id}</td>
             <td>${contato.tipo}</td>
             <td>${contato.valor}</td>
@@ -23,11 +24,15 @@ function createTableView(contatos) {
         `
         tbody.appendChild(tableRow)
     })
+
+    assignEditarContato();
 }
 
-async function loadData() {
-    const data = await getData();
+async function loadDataContact() {
+    const data = await getDataContacts();
     const titulo = document.getElementById('titulo');
     titulo.textContent = `Contatos - ${data[0].cliente.nome}`
-    createTableView(data)
+    createTableViewContatos(data)
 }
+
+loadDataContact()

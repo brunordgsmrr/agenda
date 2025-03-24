@@ -40,17 +40,6 @@ main {
     margin: 20px 50px;
 }
 
-.icon {
-    height: 36px;
-    padding: 5px 10px;
-}
-
-.icon:hover {
-    filter: invert(10%);
-    background-color: #1e45b4;
-    border-radius: 10px;
-}
-
 .headers-function {
     padding: 10px;
     display: flex;
@@ -96,6 +85,20 @@ table {
 
 table #table-col-editar {
     width: 30px;
+}
+
+table .icon {
+    height: 36px;
+    padding: 5px 15px;
+}
+
+table .icon:hover {
+    background-color: #275df1;
+    border-radius: 5px;
+}
+
+table .cell-button {
+    width: 200px;
 }
 
 thead th {
@@ -193,6 +196,14 @@ footer a {
 .modal-content .input-box {
     display: flex;
     flex-direction: column;
+}
+
+.modal-content .input-radio {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .modal-content .input-box input {

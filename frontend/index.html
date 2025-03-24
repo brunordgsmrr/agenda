@@ -20,10 +20,12 @@
                 <button id="btn-pesquisar"><img src="img/image.png" alt="Buscar"></button>
             </div>
         </div>
+
+        
         <table>
             <thead>
                 <th></th>
-                <th class="show412">ID</th>
+                <th class=" show412">ID</th>
                 <th>Nome</th>
                 <th>CPF</th>
                 <th class="show412">Data de nascimento</th>
@@ -38,34 +40,17 @@
         <!-- Estrutura do Modal -->
         <div id="cliente-modal" class="modal">
             <div class="modal-content">
-                <div class="header-modal">
-                    <h2 id="titulo-modal">Adicionar Cliente</h2>
-                    <span class="close">&times;</span>
-                </div>
-                <div class="input-box">
-                    <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Digite o nome">
-                </div>
-                <div class="input-box">
-                    <label for="cpf">CPF:</label>
-                    <input id="cpf" type="text" placeholder="Digite o nome">
-                </div>
-                <div class="input-box">
-                    <label for="dt-nasc">Data de nascimento:</label>
-                    <input id="dt-nasc" type="date" placeholder="Digite o nome">
-                </div>
-                <div class="input-box">
-                    <label for="endereco">Endereço:</label>
-                    <input id="endereco" type="text" placeholder="Digite o nome">
-                </div>
-                <br>
-                <button id="btn-salvar">Salvar</button>
+
             </div>
         </div>
     </main>
     <footer>Developed by <a href="">@brunordgsmrr</a> - 2025</footer>
 
     <script src="js/script.js"></script>
+    <script src="js/consultar.js"></script>
+    <script src="js/modal-adicionar.js"></script>
+    <script src="js/modal-editar.js"></script>
+    <script src="js/deletarCliente.js"></script>
 </body>
 
 </html>
