@@ -2,6 +2,7 @@
 
 ## Estrutura do projeto
 
+
 ## Requisitos
 
 |       Status       | Requisito                                                                                                                                                                               |
@@ -25,7 +26,7 @@
 | :heavy_check_mark: | RN05: A Data de Nascimento deve ser válida;                                                 |
 | :heavy_check_mark: | RN06: Um cliente pode ter mais de um contato cadastrado;                                    |
 | :heavy_check_mark: | RN07: Ao excluir um cliente, todos os seus contatos devem ser removidos do sistema;         |
-| :heavy_minus_sign: | RN08: O sistema deve validar os dados informados antes de permitir o cadastro ou edição.    |
+| :heavy_check_mark: | RN08: O sistema deve validar os dados informados antes de permitir o cadastro ou edição.    |
 
 ![alt text](image.png)
 
