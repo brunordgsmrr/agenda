@@ -149,11 +149,11 @@ spring.jpa.properties.hibernate.hbm2ddl.delimiter=;
 **Configurando o banco de dados**
 
 1. Criar o database **db-agenda**
-   <img src="img-docs/config-banco-1.jpg" alt="Alt Text" height="220">
-   <img src="img-docs/config-banco-2.jpg" alt="Alt Text" height="250">
+   <br><img src="img-docs/config-banco-1.jpg" alt="Alt Text" height="220">
+   <br><img src="img-docs/config-banco-2.jpg" alt="Alt Text" height="250">
 2. Criar as tabelas **tb_clientes** e **tb_contatos**
-   <img src="img-docs/config-banco-3.jpg" alt="Alt Text" height="300">
-   <img src="img-docs/config-banco-4.jpg" alt="Alt Text" width="80%">
+   <br><img src="img-docs/config-banco-3.jpg" alt="Alt Text" height="300">
+   <br><img src="img-docs/config-banco-4.jpg" alt="Alt Text" width="80%">
 
 **Conectando o backend ao banco de dados**
 
@@ -213,73 +213,73 @@ spring.jpa.properties.hibernate.hbm2ddl.delimiter=;
 ### Cadastrar um novo cliente
 
 Clicando em adicionar novo cliente, será solicitado as informações do mesmo, ao final do preenchimento basta clicar em "Adicionar".
-<img src="img-docs/passo-a-passo-01.jpg" alt="Alt Text" height="150">
-<img src="img-docs/passo-a-passo-02.jpg" alt="Alt Text" height="300"><br>
+<br><img src="img-docs/passo-a-passo-01.jpg" alt="Alt Text" height="150">
+<br><img src="img-docs/passo-a-passo-02.jpg" alt="Alt Text" height="300"><br>
 
 **Confirmação de cadastro:**
-<img src="img-docs/passo-a-passo-03.jpg" alt="Alt Text" height="100">
+<br><img src="img-docs/passo-a-passo-03.jpg" alt="Alt Text" height="100">
 
 ### Editar informações do cliente
 
 Ao clicar no simbolo de edição, será mostrado os dados do cliente a ser editado, após trocar a informação basta clicar em salvar.
-<img src="img-docs/passo-a-passo-04.jpg" alt="Alt Text" height="70">
-<img src="img-docs/passo-a-passo-05.jpg" alt="Alt Text" height="300">
+<br><img src="img-docs/passo-a-passo-04.jpg" alt="Alt Text" height="70">
+<br><img src="img-docs/passo-a-passo-05.jpg" alt="Alt Text" height="300">
 
 **Resultado da edição:**
-<img src="img-docs/passo-a-passo-06.jpg" alt="Alt Text" height="100">
-<img src="img-docs/passo-a-passo-07.jpg" alt="Alt Text" height="50">
+<br><img src="img-docs/passo-a-passo-06.jpg" alt="Alt Text" height="100">
+<br><img src="img-docs/passo-a-passo-07.jpg" alt="Alt Text" height="50">
 
 ### Excluir cliente
 
 Clicando do botão com o icone de lixeira, será realizado a exclução das informações do cliente todos os contatos relacionados ao mesmo.
-<img src="img-docs/passo-a-passo-08.jpg" alt="Alt Text" height="120">
+<br><img src="img-docs/passo-a-passo-08.jpg" alt="Alt Text" height="120">
 
 **Resultado da exclusão:**
-<img src="img-docs/passo-a-passo-09.jpg" alt="Alt Text" height="100">
-<img src="img-docs/passo-a-passo-10.jpg" alt="Alt Text" height="120">
+<br><img src="img-docs/passo-a-passo-09.jpg" alt="Alt Text" height="100">
+<br><img src="img-docs/passo-a-passo-10.jpg" alt="Alt Text" height="120">
 
 ### Pesquisar por nome ou CPF
 
 Inserindo o nome ou CPF no campo de pesquisa e clicando no icone de Lupa, o sistema listará o cliente que combina com o valor pesquisado
-<img src="img-docs/passo-a-passo-12.jpg" alt="Alt Text" height="150">
+<br><img src="img-docs/passo-a-passo-12.jpg" alt="Alt Text" height="150">
 
 ### Consultar contatos de um determinado cliente
 
 Ao clicar em **Ver contatos**, o usuário será redirecionado a pagina de contatos.
-<img src="img-docs/passo-a-passo-11.jpg" alt="Alt Text" height="300">
+<br><img src="img-docs/passo-a-passo-11.jpg" alt="Alt Text" height="300">
 
-<img src="img-docs/passo-a-passo-13.jpg" alt="Alt Text" height="120">
+<br><img src="img-docs/passo-a-passo-13.jpg" alt="Alt Text" height="120">
 
 ### Adicionar um novo contato do cliente
 
 Clicando em **Adicionar novo contato**, será solicitado os dados do novo contato do cliente.
 
-<img src="img-docs/passo-a-passo-14.jpg" alt="Alt Text" height="200"><br>
-<img src="img-docs/passo-a-passo-15.jpg" alt="Alt Text" height="250">
+<br><img src="img-docs/passo-a-passo-14.jpg" alt="Alt Text" height="200"><br>
+<br><img src="img-docs/passo-a-passo-15.jpg" alt="Alt Text" height="250">
 
 Ao pressionar **Adicionar** aparecerá o alerta de sucesso e o novo contato será listado na página.
 
-<img src="img-docs/passo-a-passo-16.jpg" alt="Alt Text" height="100"><br>
-<img src="img-docs/passo-a-passo-17.jpg" alt="Alt Text" height="200">
+<br><img src="img-docs/passo-a-passo-16.jpg" alt="Alt Text" height="100"><br>
+<br><img src="img-docs/passo-a-passo-17.jpg" alt="Alt Text" height="200">
 
 ### Excluir contato
 
 Clicando no icone de lixeira, o contato será excluido imediatamente, aparecendo um alerta indicando o sucesso da exclusão
 
-<img src="img-docs/passo-a-passo-18.jpg" alt="Alt Text" height="200"><br>
+<br><img src="img-docs/passo-a-passo-18.jpg" alt="Alt Text" height="200"><br>
 
-<img src="img-docs/passo-a-passo-19.jpg" alt="Alt Text" height="100"><br>
+<br><img src="img-docs/passo-a-passo-19.jpg" alt="Alt Text" height="100"><br>
 
 **Resultado**:
-<img src="img-docs/passo-a-passo-20.jpg" alt="Alt Text" height="150">
+<br><img src="img-docs/passo-a-passo-20.jpg" alt="Alt Text" height="150">
 
 ### Editar contato do cliente
 
 Clicando no icone de edição, será mostrado as informações do contato selecionado, basta alterar a informação que deseja e clicar em **Salvar**:
 
-<img src="img-docs/passo-a-passo-21.jpg" alt="Alt Text" height="200"><br>
-<img src="img-docs/passo-a-passo-22.jpg" alt="Alt Text" height="300"><br>
-<img src="img-docs/passo-a-passo-23.jpg" alt="Alt Text" height="100"><br>
+<br><img src="img-docs/passo-a-passo-21.jpg" alt="Alt Text" height="200"><br>
+<br><img src="img-docs/passo-a-passo-22.jpg" alt="Alt Text" height="300"><br>
+<br><img src="img-docs/passo-a-passo-23.jpg" alt="Alt Text" height="100"><br>
 
 **Valor alterado**:
-<img src="img-docs/passo-a-passo-24.jpg" alt="Alt Text" height="100"><br>
+<br><img src="img-docs/passo-a-passo-24.jpg" alt="Alt Text" height="100"><br>
