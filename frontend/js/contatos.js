@@ -20,12 +20,13 @@ function createTableViewContatos(contatos) {
             <td>${contato.tipo}</td>
             <td>${contato.valor}</td>
             <td class="show412">${contato.observacao}</td>
-            <td><button id="btn-excluir"><img src="img/excluir.png" alt="" class="icon"></button></td>
+            <td><button id="btn-excluir-contato" contatoId="${contato.id}"><img src="img/excluir.png" alt="" class="icon"></button></td>
         `
         tbody.appendChild(tableRow)
     })
 
     assignEditarContato();
+    assignDeleteContactFunction();
 }
 
 async function loadDataContact() {
