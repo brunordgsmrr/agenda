@@ -4,11 +4,11 @@
 
 1. [Requisitos](#requisitos)
 2. [Estrutura do projeto](#estrutura-do-projeto)
-   2.1. [Backend ou Server-side](#backend-ou-server-side)
-   2.2. [Front ou Client-side](#front-ou-client-side)
-   2.2.1. [Tela Cliente](#tela-cliente)
-   2.2.2. [Tela Contatos](#tela-de-contatos)
-   2.3. [Banco de dados](#banco-de-dados)
+   2.1. [Backend ou Server-side](#backend-ou-server-side)<br>
+   2.2. [Front ou Client-side](#front-ou-client-side)<br>
+   2.2.1. [Tela Cliente](#tela-cliente)<br>
+   2.2.2. [Tela Contatos](#tela-de-contatos)<br>
+   2.3. [Banco de dados](#banco-de-dados)<br>
 3. [Dependências](#dependências)
 4. [Configurações](#configurações)
 5. [Instruções de uso](#instruções-de-uso)
